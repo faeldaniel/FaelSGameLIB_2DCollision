@@ -25,7 +25,7 @@ bool checkObjAround(short OBJ1X,  short OBJ1Y,  short OBJ2X, short OBJ2Y, unsign
 
 //---------------------------------------------------------------------------------
 //This function check if OBJ1 this arround OBJ2 and return your position
-bool checkSprtAroundReturnPosition(short OBJ1X,  short OBJ1Y,  short OBJ2X, short OBJ2Y, unsigned short size){
+bool checkObjAroundAndReturnPosition(short OBJ1X,  short OBJ1Y,  short OBJ2X, short OBJ2Y, unsigned short size){
 	if((OBJ1Y == OBJ2Y) & ((OBJ1X > OBJ2X) & ((OBJ1X - size) <= OBJ2X))){
 		return LEFT;
 	}else if((OBJ1Y == OBJ2Y) & ((OBJ1X < OBJ2X) & ((OBJ1X + size) >= OBJ2X))){
@@ -41,7 +41,7 @@ bool checkSprtAroundReturnPosition(short OBJ1X,  short OBJ1Y,  short OBJ2X, shor
 
 //---------------------------------------------------------------------------------
 //This function check colision for sprites
-unsigned short checkSprtCol(short OBJ1X, short OBJ1Y, short OBJ2X, short OBJ2Y, unsigned short direction, unsigned short size){
+bool checkObjCol(short OBJ1X, short OBJ1Y, short OBJ2X, short OBJ2Y, unsigned short direction, unsigned short size){
 
 	switch(direction){
 
