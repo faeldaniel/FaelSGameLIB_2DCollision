@@ -1,3 +1,7 @@
+/*
+*  hit-testing algorithm in C
+*/
+
 typedef short bool;
 #define TRUE 1
 #define FALSE 0
